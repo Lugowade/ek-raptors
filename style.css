@@ -1,0 +1,122 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0c0c0e; /* Un fondo un poco más oscuro y premium */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    /* Mantenemos el degradado y la imagen */
+    background-image: linear-gradient(rgba(12, 12, 14, 0.75), rgba(12, 12, 14, 0.85)), url('img/equipo.jpeg');
+    background-size: cover;
+    
+    /* MODIFICADO: Esto fuerza que la imagen suba y se centre horizontalmente */
+    background-position: center top; 
+    
+    /* MODIFICADO: Aumentamos el padding para hacer el banner más alto y ver más de la foto */
+    padding: 12rem 2rem; 
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    
+    /* AÑADIDO: Asegura una altura mínima considerable para ver bien al equipo */
+    min-height: 450px; 
+}
+
+.logo {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+/* Colores personalizados */
+.txt-purple {
+    color: #a855f7; /* Morado eléctrico */
+    text-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.txt-green {
+    color: #00e676; /* Verde neón de alta visibilidad */
+    text-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
+}
+
+header p {
+    font-size: 1.3rem; /* Un poco más grande para mejor lectura */
+    color: #cccccc;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.presentation-section {
+    background-color: #16161a;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    text-align: center;
+    border: 1px solid #24242b;
+}
+
+.presentation-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f4f4f6;
+}
+
+.slide-container img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #000;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.controls {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #a855f7; /* Botones morados por defecto */
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(168, 85, 247, 0.2);
+}
+
+button:hover {
+    background-color: #00e676; /* Cambian a verde al pasar el mouse */
+    color: #0c0c0e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 230, 118, 0.4);
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
