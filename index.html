@@ -6,31 +6,63 @@
     <title>Ek'Raptors | Robotics</title>
     
     <link rel="icon" type="image/png" href="img/EkRaptorsLogoToon.png">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header-content fade-in">
             <h1 class="logo"><span class="txt-purple">Ek'</span><span class="txt-green">Raptors</span></h1>
-            <p>Innovación y Competencia en Robótica</p>
+            <p>Cazadores Internacionales de Estrellas</p>
         </div>
     </header>
 
     <main>
-        <section class="presentation-section fade-in">
-            <h2>Nuestra Presentación</h2>
+        <div class="content-layout">
             
-            <div class="slide-container">
-                <img id="current-slide" src="img/diapositiva1.jpeg" alt="Diapositiva Ek'Raptors">
-            </div>
-            
-            <div class="controls">
-                <button id="btn-prev">Anterior</button>
-                <button id="btn-next">Siguiente</button>
-            </div>
-        </section>
+            <section class="presentation-section fade-in">
+                <h2>¡Conócenos!</h2>
+                
+                <div class="slide-container">
+                    <img id="current-slide" src="img/1.png" alt="Diapositiva Ek'Raptors">
+                </div>
+                
+                <div class="controls">
+                    <button id="btn-prev">Anterior</button>
+                    <button id="btn-next">Siguiente</button>
+                </div>
+            </section>
+
+            <aside class="instagram-section fade-in">
+                <h2>En Acción</h2>
+                <div class="ig-container">
+                    <iframe id="ig-frame" src="" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
+            </aside>
+
+        </div>
     </main>
+
+    <footer class="footer-section">
+        <div class="footer-content fade-in">
+            <h2>Nuestros Contactos</h2>
+            <div class="contact-links">
+                <a href="mailto:ek.raptors@upy.edu.mx" class="contact-btn">✉️ Correo UPY</a>
+                <a href="https://www.instagram.com/ekraptors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="contact-btn">📷 Instagram</a>
+                <a href="https://www.facebook.com/share/1JMH4VygL3/" target="_blank" class="contact-btn">📘 Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <div class="floating-menu" id="floating-menu">
+            <a href="faq.html" class="menu-item">Preguntas frecuentes</a>
+            <a href="redes.html" class="menu-item">Nuestras redes</a>
+            <a href="mailto:ek.raptors@upy.edu.mx" class="menu-item">Contáctanos</a>
+        </div>
+        <button class="floating-btn" id="floating-btn">
+            <img src="img/EkRaptorsLogoToon.png" alt="Menú Ek'Raptors">
+        </button>
+    </div>
 
     <script src="script.js"></script>
 </body>
